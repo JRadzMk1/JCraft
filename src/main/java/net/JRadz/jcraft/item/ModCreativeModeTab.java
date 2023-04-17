@@ -1,0 +1,13 @@
+package net.JRadz.jcraft.item;
+
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.ItemStack;
+
+public class ModCreativeModeTab {
+    public static final CreativeModeTab JCRAFT_TAB = new CreativeModeTab("jcrafttab") {
+        @Override
+        public ItemStack makeIcon() {
+            return new ItemStack(ModItems.SUBSCRIPTION.get());
+        }
+    };
+}
